@@ -4,6 +4,119 @@ html {
 * {
     box-sizing: border-box;
   }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  nav {
+    background-color: 0c2461;
+
+  }
+
+  .heroImage {
+  background: linear-gradient(teal);
+  opacity: 65%;
+  
+  }
+  
+  .heroImage {
+  
+    
+    background-image: url(./images/heroimg.PNG);
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background-size: cover;
+    
+    }
+  
+    button {
+    border-radius: 4px;
+    background-color: #04817E;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-size-adjust: 25%;
+  
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    
+    .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    
+    .button:hover span {
+    padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    
+    .containerHero {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    
+    }
+    
+    .containerIntro{
+      margin-top: 20%;
+    }
+    .hero-text button:hover {
+    background-color: rgb(7, 6, 6);
+    color: black;
+    width: 400px;
+    }
+  
+  .btn {
+    background-color: #1f1e43;
+    padding: 10px 24px;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s all;
+    text-align: center
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+  }
+  
+  .btn:hover 
+  {opacity: 1
+  }
+  
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -75,7 +188,8 @@ html {
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 150px;
+    height: 150px;
   }
   
   /* Add a transparency effect for thumnbail images */
